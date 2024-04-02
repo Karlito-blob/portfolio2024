@@ -1,0 +1,221 @@
+// COLORS STYLE //
+$bgDark: #0B0B0B;
+$colorDark: #F5F5F5;
+$Primaire: #0028EA;
+$buttonDark: #1D1D1D;
+$hover: #2E2E2E;
+$divider: #E3E3E3;
+
+
+// FONTS STYLE //
+
+@font-face {
+    font-family: "PP Mondwest";
+    src: url("../assets/fonts/PPMondwest-Regular.woff2") format("woff2"),
+        url("../assets/fonts/PPMondwest-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("../assets/fonts/PPNeueMontreal-Medium.woff2") format("woff2"),
+        url("../assets/fonts/PPNeueMontreal-Medium.woff") format("woff");
+}
+
+.displayLarge {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: "PP Mondwest", serif;
+    color: $colorDark;
+
+    @media (min-width: 701px) {
+        font-size: 10rem;
+    }
+
+    @media (min-width: 470px) and (max-width: 700px) {
+        font-size: 6.5rem;
+    }
+
+    @media (max-width: 470px) {
+        font-size: 4.5rem;
+        text-align: start;
+    }
+}
+
+
+.bodyLarge {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "PP Neue Montreal", sans-serif;
+
+
+    @media (max-width: 470px) {
+        font-size: 1.5rem;
+    }
+}
+
+.bodyMedium {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: "PP Neue Montreal", sans-serif;
+    color: $colorDark;
+
+    @media (max-width: 470px) {
+        text-align: start;
+    }
+}
+
+.puceMedium {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "PP Neue Montreal", sans-serif;
+    text-transform: capitalize;
+}
+
+.puceSmall {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "PP Mondwest", serif;
+    text-transform: capitalize;
+}
+
+.label {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "PP Neue Montreal", sans-serif;
+    text-transform: uppercase;
+}
+
+.buttonTxtPrimary {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "PP Neue Montreal", sans-serif;
+    text-transform: capitalize;
+    color: $Primaire;
+}
+
+.buttonTxtSecondary {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 150%;
+    font-family: "PP Neue Montreal", sans-serif;
+    text-transform: capitalize;
+    color: $colorDark;
+}
+
+
+// IMG STYLE //
+.cartouche {
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.09);
+    }
+
+    @media (max-width: 470px) {
+        width: 280px;
+    }
+}
+
+.cartoucheProjet {
+    width: 212px;
+
+    @media (max-width: 470px) {
+        display: none;
+    }
+}
+
+.imgProject {
+    width: 100%;
+    height: 704px;
+    border-radius: 24px;
+    object-fit: cover;
+
+    @media (max-width: 470px) {
+        height: 234px;
+        object-fit: cover;
+    }
+}
+
+/////////////////////////
+//// - END STYLES - ////
+///////////////////////
+
+
+
+////////////////////////////////
+//// - COMPONENTS STYLES - ////
+//////////////////////////////
+
+.header {
+    width: 100vw;
+    padding: 40px 40px 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 470px) {
+        padding: 20px 20px 0 20px;
+    }
+
+}
+
+.progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #60F852;
+    transform-origin: 0%;
+}
+
+.buttonPrimary {
+    padding: 16px 20px;
+    border-radius: 999px;
+    border: 1px solid $divider;
+    background-color: white;
+}
+
+.buttonPdf {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    border: none;
+    background-color: $buttonDark;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+.buttonBack {
+    margin: 0;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 999px;
+}

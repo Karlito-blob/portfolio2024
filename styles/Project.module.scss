@@ -1,0 +1,106 @@
+.containerFix {
+    width: 35%;
+    height: 100%;
+    bottom: 40px;
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    @media (max-width: 470px) {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+.heroSection {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+
+.containerText {
+    width: 60%;
+    height: 100%;
+    padding: 144px 80px 40px 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (max-width: 470px) {
+        width: 100%;
+        justify-content: start;
+        gap: 80px;
+        padding: 144px 20px 20px 20px;
+    }
+}
+
+.boxTags {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.simpleTag {
+    display: flex;
+    gap: 40px;
+}
+
+.boxCategory {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionDetails {
+    width: 100%;
+    padding: 80px 80px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 160px;
+
+    @media (max-width: 470px) {
+        padding: 40px 20px;
+        gap: 80px;
+    }
+}
+
+.containerExplication {
+    padding-right: 80px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width: 470px) {
+        padding-right: 0px;
+        width: 100%;
+    }
+}
+
+.boxButtons {
+    display: flex;
+    gap: 24px;
+
+    @media (max-width: 470px) {
+        flex-direction: column;
+    }
+}
+
+.containerImg {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width: 470px) {
+        width: 100%;
+        gap: 20px;
+    }
+}
