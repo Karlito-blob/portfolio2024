@@ -17,7 +17,7 @@ function Index() {
   }
 
   const cartouches = projects.map((project, index) => (
-    <img className={ds.cartouche} src={project.cartouche.default.blurDataURL} alt={project.title} onClick={() => { handleNavigation('project', project.id) }} />
+    <img className={ds.cartouche} src={project.cartouche.default.src} alt={project.title} onClick={() => { handleNavigation('project', project.id) }} />
   ));
 
   return (

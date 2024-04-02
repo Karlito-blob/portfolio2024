@@ -62,7 +62,7 @@ function Project() {
     const imagesList = (
         <div className={styles.containerImg}>
             {project.images.map((image, index) => (
-                <img key={index} src={image.default.blurDataURL} alt={`Image ${index}`} className={ds.imgProject} />
+                <img key={index} src={image.default.src} alt={`Image ${index}`} className={ds.imgProject} />
             ))}
         </div>
     )
@@ -74,7 +74,7 @@ function Project() {
             <ProgressBar />
             <Header />
             <div className={styles.containerFix}>
-                <img src={project.cartouche.default.blurDataURL} alt={project.title} className={ds.cartoucheProjet} />
+                <img src={project.cartouche.default.src} alt={project.title} className={ds.cartoucheProjet} />
                 <ButtonBack />
             </div>
             <div className={styles.heroSection} style={{ backgroundColor: project.bgColor }}>
