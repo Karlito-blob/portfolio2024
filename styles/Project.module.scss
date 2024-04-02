@@ -1,3 +1,5 @@
+@import 'DesignSystem.module';
+
 .containerFix {
     width: 35%;
     height: 100%;
@@ -20,7 +22,7 @@
     height: 100vh;
     display: flex;
     justify-content: end;
-    color: white;
+    color: $colorDark;
 }
 
 .containerText {

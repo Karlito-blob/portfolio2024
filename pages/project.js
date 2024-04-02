@@ -3,11 +3,19 @@ import { useRouter } from 'next/router';
 import Header from "../components/Header";
 import { projects } from "../data/projects";
 
+import {
+    GitHub as GitHubIcon,
+    PlayCircleFilledWhiteOutlined as PlayCircleFilledWhiteOutlinedIcon,
+    PictureAsPdfOutlined as PictureAsPdfOutlinedIcon,
+    LanguageOutlined as LanguageOutlinedIcon
+} from '@mui/icons-material';
+
 import ds from "../styles/DesignSystem.module.css";
 import styles from "../styles/Project.module.css";
 import ButtonPrimary from '../components/Fundations/ButtonPrimary';
 import ProgressBar from '../components/Fundations/ProgressBar';
 import ButtonBack from '../components/Fundations/ButtonBack';
+import ButtonSecondary from '../components/Fundations/ButtonSecondary';
 
 function Project() {
     const router = useRouter();
@@ -51,11 +59,25 @@ function Project() {
         </div>
     );
 
+    const getButtonIcon = (buttonIcon) => {
+        switch (buttonIcon) {
+            case 'GitHubIcon':
+                return GitHubIcon;
+            case 'PlayCircleFilledWhiteOutlinedIcon':
+                return PlayCircleFilledWhiteOutlinedIcon;
+            case 'PictureAsPdfOutlinedIcon':
+                return PictureAsPdfOutlinedIcon;
+            case 'LanguageOutlinedIcon':
+                return LanguageOutlinedIcon;
+            default:
+                return null;
+        }
+    };
+    
     const buttonsList = (
         <div className={styles.boxButtons}>
-            <ButtonPrimary text={project.button1} onClick={() => handleButtonClick(project.url1)} />
-            <ButtonPrimary text={project.button2} onClick={() => handleButtonClick(project.url2)} />
-
+            <ButtonPrimary text={project.button1} icon={getButtonIcon(project.button1Icon)} onClick={() => handleButtonClick(project.url1)} />
+            <ButtonSecondary text={project.button2} icon={getButtonIcon(project.button2Icon)} onClick={() => handleButtonClick(project.url2)} />
         </div>
     )
 

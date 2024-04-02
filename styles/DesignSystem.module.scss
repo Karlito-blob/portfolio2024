@@ -6,6 +6,9 @@ $buttonDark: #1D1D1D;
 $hover: #2E2E2E;
 $divider: #E3E3E3;
 
+$neutre1: #141414;
+$neutre2: #292929;
+
 
 // FONTS STYLE //
 
@@ -51,6 +54,7 @@ $divider: #E3E3E3;
     font-weight: 500;
     line-height: 150%;
     font-family: "PP Neue Montreal", sans-serif;
+    color: $neutre1;
 
 
     @media (max-width: 470px) {
@@ -106,7 +110,6 @@ $divider: #E3E3E3;
     line-height: 150%;
     font-family: "PP Neue Montreal", sans-serif;
     text-transform: capitalize;
-    color: $Primaire;
 }
 
 .buttonTxtSecondary {
@@ -191,9 +194,26 @@ $divider: #E3E3E3;
 }
 
 .buttonPrimary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     padding: 16px 20px;
     border-radius: 999px;
     border: 1px solid $divider;
+    color: $Primaire;
+    background-color: white;
+}
+
+.buttonSecondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 20px;
+    border-radius: 999px;
+    border: 1px solid $divider;
+    color: $neutre2;
     background-color: white;
 }
 
@@ -214,8 +234,13 @@ $divider: #E3E3E3;
 
 .buttonBack {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 56px;
     height: 56px;
     border: none;
     border-radius: 999px;
+    color: $Primaire;
+    background-color: white;
 }

@@ -12,7 +12,9 @@ export const projects = [
     cartouche: require('../assets/images/bourdelle/Bourdelle_Cartouche.png'),
     bgColor: '#0B0B0B',
     button1: 'Play Prototype',
+    button1Icon: 'PlayCircleFilledWhiteOutlinedIcon',
     button2: 'Read Case Study',
+    button2Icon: 'PictureAsPdfOutlinedIcon',
     images: [
       require('../assets/images/bourdelle/MOAB - Recherche.png'),
       require('../assets/images/bourdelle/MOAB - Intro.png'),
@@ -33,7 +35,9 @@ export const projects = [
     bgColor: '#7D2CCE',
     imgBackground: "require('../assets/images/laCapsule/Telescope.png')",
     button1: 'Play Prototype',
+    button1Icon: 'PlayCircleFilledWhiteOutlinedIcon',
     button2: 'See work',
+    button2Icon: 'LanguageOutlinedIcon',
     url1: 'https://www.figma.com/proto/S7R5gemqnM6OwIHpwaMvZD/Getting-started-with-Figma-%40LaCapsule?page-id=4%3A50&type=design&node-id=13-4624&viewport=396%2C230%2C0.25&t=okK1KOxUykriapXp-1&scaling=scale-down&starting-point-node-id=13%3A4624&mode=design',
     url2:'',
     images: [
