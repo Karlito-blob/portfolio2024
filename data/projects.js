@@ -33,7 +33,7 @@ export const projects = [
     category: "workshop",
     cartouche: require('../assets/images/laCapsule/LaCapsule_Cartouche.png'),
     bgColor: '#7D2CCE',
-    imgBackground: "require('../assets/images/laCapsule/Telescope.png')",
+    imgBackground: require('../assets/images/laCapsule/bgImage.png'),
     button1: 'Play Prototype',
     button1Icon: 'PlayCircleFilledWhiteOutlinedIcon',
     button2: 'See work',

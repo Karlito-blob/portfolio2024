@@ -238,7 +238,7 @@
 .buttonIcon {
   cursor: pointer;
   color: #F5F5F5;
-  transition: color 1s ease;
+  transition: color 0.3s ease-in-out;
 }
 .buttonIcon:hover {
   color: #0028EA;

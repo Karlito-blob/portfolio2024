@@ -89,7 +89,7 @@ function Project() {
         </div>
     )
 
-
+console.log(project.imgBackground.default)
 
     return (
         <div>
@@ -99,7 +99,7 @@ function Project() {
                 <img src={project.cartouche.default.src} alt={project.title} className={ds.cartoucheProjet} />
                 <ButtonBack />
             </div>
-            <div className={styles.heroSection} style={{ backgroundColor: project.bgColor }}>
+            <div className={styles.heroSection} style={{ backgroundImage: `url(${project.imgBackground.default.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
                 <div className={styles.containerText}>
                     {tagsList}
                     <div className={styles.boxCategory}>

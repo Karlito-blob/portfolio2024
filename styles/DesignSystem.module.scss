@@ -266,7 +266,7 @@ $neutre2: #292929;
 .buttonIcon {
     cursor: pointer;
     color: $colorDark;
-    transition: color 1s ease;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
         color: $Primaire;
