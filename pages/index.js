@@ -2,6 +2,7 @@ import React from 'react'
 import Header from "../components/Header";
 import { projects } from "../data/projects"
 import { useRouter } from 'next/router';
+import Footer from '../components/Footer';
 
 import ds from '../styles/DesignSystem.module.css'
 import styles from '../styles/Home.module.css'
@@ -30,6 +31,7 @@ function Index() {
       <div className={styles.boxCartouches}>
         {cartouches}
       </div>
+      <Footer />
     </div>
   );
 }

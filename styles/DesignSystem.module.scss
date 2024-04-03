@@ -76,6 +76,17 @@ $neutre2: #292929;
     }
 }
 
+.bodySmall {
+    margin: 0;
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: "PP Neue Montreal", sans-serif;
+    text-transform: uppercase;
+    color: $colorDark;
+}
+
 .puceMedium {
     margin: 0;
     font-size: 0.875rem;
@@ -167,6 +178,101 @@ $neutre2: #292929;
 //// - COMPONENTS STYLES - ////
 //////////////////////////////
 
+.progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #60F852;
+    transform-origin: 0%;
+}
+
+.buttonPrimary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 20px;
+    border-radius: 999px;
+    border: 1px solid $divider;
+    color: $Primaire;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $Primaire;
+        color: $colorDark;
+    }
+}
+
+.buttonSecondary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 20px;
+    border-radius: 999px;
+    border: 1px solid $divider;
+    color: $neutre2;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $neutre2;
+        color: $colorDark;
+    }
+}
+
+.buttonPdf {
+    cursor: pointer;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    border: none;
+    background-color: $buttonDark;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+.buttonBack {
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 999px;
+    color: $Primaire;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $Primaire;
+        color: $colorDark;
+
+    }
+}
+
+.buttonIcon {
+    cursor: pointer;
+    color: $colorDark;
+    transition: color 1s ease;
+
+    &:hover {
+        color: $Primaire;
+    }
+}
+
 .header {
     width: 100vw;
     padding: 40px 40px 0 40px;
@@ -183,64 +289,23 @@ $neutre2: #292929;
 
 }
 
-.progressBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: #60F852;
-    transform-origin: 0%;
-}
-
-.buttonPrimary {
+.footer {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 16px 20px;
-    border-radius: 999px;
-    border: 1px solid $divider;
-    color: $Primaire;
-    background-color: white;
-}
+    justify-content: space-between;
 
-.buttonSecondary {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 16px 20px;
-    border-radius: 999px;
-    border: 1px solid $divider;
-    color: $neutre2;
-    background-color: white;
-}
+    color: $colorDark;
 
-.buttonPdf {
-    padding: 12px 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border-radius: 999px;
-    border: none;
-    background-color: $buttonDark;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-        background-color: $hover;
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 24px;
     }
-}
 
-.buttonBack {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 56px;
-    height: 56px;
-    border: none;
-    border-radius: 999px;
-    color: $Primaire;
-    background-color: white;
+    @media (max-width: 470px) {
+        flex-direction: column;
+        gap: 24px;
+    }
+
 }

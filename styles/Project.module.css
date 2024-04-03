@@ -38,7 +38,7 @@
   font-weight: 500;
   line-height: 150%;
   font-family: "PP Neue Montreal", sans-serif;
-  color: #0B0B0B;
+  color: #141414;
 }
 @media (max-width: 470px) {
   .bodyLarge {
@@ -95,7 +95,6 @@
   line-height: 150%;
   font-family: "PP Neue Montreal", sans-serif;
   text-transform: capitalize;
-  color: #0028EA;
 }
 
 .buttonTxtSecondary {
@@ -145,22 +144,6 @@
   }
 }
 
-.header {
-  width: 100vw;
-  padding: 40px 40px 0 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-@media (max-width: 470px) {
-  .header {
-    padding: 20px 20px 0 20px;
-  }
-}
-
 .progressBar {
   position: fixed;
   top: 0;
@@ -172,9 +155,26 @@
 }
 
 .buttonPrimary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   padding: 16px 20px;
   border-radius: 999px;
   border: 1px solid #E3E3E3;
+  color: #0028EA;
+  background-color: white;
+}
+
+.buttonSecondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 20px;
+  border-radius: 999px;
+  border: 1px solid #E3E3E3;
+  color: #292929;
   background-color: white;
 }
 
@@ -194,10 +194,46 @@
 
 .buttonBack {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 56px;
   height: 56px;
   border: none;
   border-radius: 999px;
+  color: #0028EA;
+  background-color: white;
+}
+
+.header {
+  width: 100vw;
+  padding: 40px 40px 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 470px) {
+  .header {
+    padding: 20px 20px 0 20px;
+  }
+}
+
+.footer {
+  width: 100vw;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #F5F5F5;
+}
+@media (max-width: 470px) {
+  .footer {
+    padding: 20px;
+    flex-direction: column;
+  }
 }
 
 .containerFix {
