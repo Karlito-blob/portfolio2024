@@ -38,7 +38,7 @@ export const projects = [
     button1Icon: 'PlayCircleFilledWhiteOutlinedIcon',
     button2: 'See work',
     button2Icon: 'LanguageOutlinedIcon',
-    url1: 'https://www.figma.com/proto/S7R5gemqnM6OwIHpwaMvZD/Getting-started-with-Figma-%40LaCapsule?page-id=4%3A50&type=design&node-id=13-4624&viewport=396%2C230%2C0.25&t=okK1KOxUykriapXp-1&scaling=scale-down&starting-point-node-id=13%3A4624&mode=design',
+    url1: 'https://www.figma.com/proto/S7R5gemqnM6OwIHpwaMvZD/Getting-started-with-Figma-%40LaCapsule?page-id=4%3A50&type=design&node-id=128-1719&viewport=-534%2C215%2C0.19&t=Uw6jRM2K0qBsVxVv-1&scaling=scale-down&starting-point-node-id=128%3A1719&mode=design',
     url2:'https://www.figma.com/community/file/1342654436378351302/getting-started-with-figma-lacapsule',
     images: [
       require('../assets/images/laCapsule/laCapsule01.png'),

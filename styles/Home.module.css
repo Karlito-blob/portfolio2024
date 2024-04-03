@@ -161,11 +161,12 @@
   left: 0;
   right: 0;
   height: 10px;
-  background: #60F852;
+  background: #0028EA;
   transform-origin: 0%;
 }
 
 .buttonPrimary {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,9 +176,15 @@
   border: 1px solid #E3E3E3;
   color: #0028EA;
   background-color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.buttonPrimary:hover {
+  background-color: #0028EA;
+  color: #F5F5F5;
 }
 
 .buttonSecondary {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,9 +194,15 @@
   border: 1px solid #E3E3E3;
   color: #292929;
   background-color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.buttonSecondary:hover {
+  background-color: #292929;
+  color: #F5F5F5;
 }
 
 .buttonPdf {
+  cursor: pointer;
   padding: 12px 16px;
   display: flex;
   align-items: center;
@@ -204,6 +217,7 @@
 }
 
 .buttonBack {
+  cursor: pointer;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -214,6 +228,20 @@
   border-radius: 999px;
   color: #0028EA;
   background-color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.buttonBack:hover {
+  background-color: #0028EA;
+  color: #F5F5F5;
+}
+
+.buttonIcon {
+  cursor: pointer;
+  color: #F5F5F5;
+  transition: color 0.3s ease-in-out;
+}
+.buttonIcon:hover {
+  color: #0028EA;
 }
 
 .header {
@@ -234,7 +262,6 @@
 
 .footer {
   width: 100%;
-  padding-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -247,7 +274,6 @@
 }
 @media (max-width: 470px) {
   .footer {
-    padding-bottom: 20px;
     flex-direction: column;
     gap: 24px;
   }
@@ -257,7 +283,6 @@
   width: 100vw;
   height: 100vh;
   padding: 144px 40px 40px 40px;
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

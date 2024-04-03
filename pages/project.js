@@ -77,7 +77,7 @@ function Project() {
     const buttonsList = (
         <div className={styles.boxButtons}>
             <ButtonPrimary text={project.button1} icon={getButtonIcon(project.button1Icon)} onClick={() => handleButtonClick(project.url1)} />
-            <ButtonSecondary text={project.button2} icon={getButtonIcon(project.button2Icon)} onClick={() => handleButtonClick(project.url2)} />
+            <ButtonPrimary text={project.button2} icon={getButtonIcon(project.button2Icon)} onClick={() => handleButtonClick(project.url2)} />
         </div>
     )
 
@@ -112,7 +112,7 @@ console.log(project.imgBackground.default)
             <div className={styles.sectionDetails}>
                 <div className={styles.containerExplication}>
                     <p className={ds.bodyLarge}>{project.description}</p>
-                    {/* {buttonsList} */}
+                    {buttonsList}
                 </div>
                 {imagesList}
             </div>
