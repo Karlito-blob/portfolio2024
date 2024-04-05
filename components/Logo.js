@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Icon() {
+
+    const [isOnWhiteBackground, setIsOnWhiteBackground] = useState(false);
+
+    useEffect(() => {
+        const parentBackgroundColor = window.getComputedStyle(document.body.parentNode).backgroundColor;
+        setIsOnWhiteBackground(parentBackgroundColor === "rgb(245, 245, 245)");
+    }, []);
+
+    const svgStyle = isOnWhiteBackground ? { filter: 'invert(100%) grayscale(100%)' } : {};
 
     return (
         <svg
@@ -9,6 +18,7 @@ export default function Icon() {
             height="64"
             fill="none"
             viewBox="0 0 64 64"
+            style={svgStyle}
         >
             <path
                 fill="#F5F5F5"
