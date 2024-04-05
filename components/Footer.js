@@ -5,6 +5,8 @@ import ds from "../styles/DesignSystem.module.css"
 import {
     LinkedIn as LinkedInIcon,
     GitHub as GitHubIcon,
+    Instagram as InstagramIcon,
+    SportsBasketball as SportsBasketballIcon,
 } from '@mui/icons-material';
 
 export default function Footer() {
@@ -21,10 +23,22 @@ export default function Footer() {
         window.open(linkedinProfileURL, "_blank");
     }
 
+    const handleNavigationInstagram = () => {
+        const instagramProfileURL = "https://www.instagram.com/_sunny_colors/∑";
+        window.open(instagramProfileURL, "_blank");
+    }
+
+    const handleNavigationDribbble = () => {
+        const dribbbleProfileURL = "https://dribbble.com/sunny_colors";
+        window.open(dribbbleProfileURL, "_blank");
+    }
+
     return (
         <div className={ds.footer}>
             <p className={ds.bodySmall}>@2024 - Karl chareyre Portfolio</p>
             <div className={ds.container}>
+                <SportsBasketballIcon className={ds.buttonIcon} onClick={() => handleNavigationDribbble()} />
+                <InstagramIcon className={ds.buttonIcon} onClick={() => handleNavigationInstagram()} />
                 <GitHubIcon className={ds.buttonIcon} onClick={() => handleNavigationGitHub()} />
                 <LinkedInIcon className={ds.buttonIcon} onClick={() => handleNavigationLinkedin()} />
             </div>

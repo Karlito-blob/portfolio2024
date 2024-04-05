@@ -2,37 +2,13 @@ export const projects = [
   {
     id: 1,
     number: "Projet n°01",
-    title: "Bourdelle",
-    tags: [{
-      research: "mapping, interview, user journey, ideation",
-      design: "ux writing, visual identity, layout, prototype",
-    }],
-    description: "AR Bourdelle aims to enhance the museum experience by allowing visitors to explore Bourdelle's sculptures interactively and immersively through augmented reality. The goal was to make classical art more accessible and engaging, providing an educational and entertaining experience that sparks curiosity and appreciation for cultural heritage.",
-    category: "application concept",
-    cartouche: require('../assets/images/bourdelle/Bourdelle_Cartouche.png'),
-    bgColor: '#0B0B0B',
-    imgBackground: require('../assets/images/bourdelle/bgImage.png'),
-    button1: 'Play Prototype',
-    button1Icon: 'PlayCircleFilledWhiteOutlinedIcon',
-    button2: 'Read Case Study',
-    button2Icon: 'PictureAsPdfOutlinedIcon',
-    url2:  '',
-    images: [
-      require('../assets/images/bourdelle/MOAB - Recherche.png'),
-      require('../assets/images/bourdelle/MOAB - Intro.png'),
-      require('../assets/images/bourdelle/MOAB - Identité.png'),
-    ]
-  },
-  {
-    id: 2,
-    number: "Projet n°02",
     title: "Capsule",
     tags: [{
       research: "brainstorming, architecture, user stories",
       design: "ux writing, visual identity, UI kit, layout, prototype",
     }],
     description: "Réalisation d’une formation sur l'utilisation des composants et des kits d'interface utilisateur, aidant les participants à maîtriser les bases de Figma. L’objectif de cet atelier était de renforcer leur expertise en intégrant des connaissances pour la conception de leurs projets.",
-    category: "workshop",
+    category: "App Education",
     cartouche: require('../assets/images/laCapsule/LaCapsule_Cartouche.png'),
     bgColor: '#7D2CCE',
     imgBackground: require('../assets/images/laCapsule/bgImage.png'),
@@ -50,4 +26,28 @@ export const projects = [
       require('../assets/images/laCapsule/laCapsule05.png'),
     ]
   },
+  // {
+  //   id: 2,
+  //   number: "Projet n°02",
+  //   title: "Bourdelle",
+  //   tags: [{
+  //     research: "mapping, interview, user journey, ideation",
+  //     design: "ux writing, visual identity, layout, prototype",
+  //   }],
+  //   description: "AR Bourdelle aims to enhance the museum experience by allowing visitors to explore Bourdelle's sculptures interactively and immersively through augmented reality. The goal was to make classical art more accessible and engaging, providing an educational and entertaining experience that sparks curiosity and appreciation for cultural heritage.",
+  //   category: "Augmented reality",
+  //   cartouche: require('../assets/images/bourdelle/Bourdelle_Cartouche.png'),
+  //   bgColor: '#0B0B0B',
+  //   imgBackground: require('../assets/images/bourdelle/bgImage.png'),
+  //   button1: 'Play Prototype',
+  //   button1Icon: 'PlayCircleFilledWhiteOutlinedIcon',
+  //   button2: 'Read Case Study',
+  //   button2Icon: 'PictureAsPdfOutlinedIcon',
+  //   url2:  '',
+  //   images: [
+  //     require('../assets/images/bourdelle/MOAB - Recherche.png'),
+  //     require('../assets/images/bourdelle/MOAB - Intro.png'),
+  //     require('../assets/images/bourdelle/MOAB - Identité.png'),
+  //   ]
+  // },
 ];

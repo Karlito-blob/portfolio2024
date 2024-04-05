@@ -73,7 +73,7 @@ function Project() {
                 return null;
         }
     };
-    
+
     const buttonsList = (
         <div className={styles.boxButtons}>
             <ButtonPrimary text={project.button1} icon={getButtonIcon(project.button1Icon)} onClick={() => handleButtonClick(project.url1)} />
@@ -89,17 +89,19 @@ function Project() {
         </div>
     )
 
-console.log(project.imgBackground.default)
+    console.log(project.imgBackground.default)
 
     return (
         <div>
             <ProgressBar />
             <Header />
             <div className={styles.containerFix}>
-                <img src={project.cartouche.default.src} alt={project.title} className={ds.cartoucheProjet} />
-                <ButtonBack />
+                <div className={styles.boxCartouche}>
+                    <img src={project.cartouche.default.src} alt={project.title} className={ds.cartoucheProjet} />
+                    <ButtonBack />
+                </div>
             </div>
-            <div className={styles.heroSection} style={{ backgroundImage: `url(${project.imgBackground.default.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+            <div className={styles.heroSection} style={{ backgroundImage: `url(${project.imgBackground.default.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className={styles.containerText}>
                     {tagsList}
                     <div className={styles.boxCategory}>
