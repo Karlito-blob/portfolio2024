@@ -105,7 +105,6 @@
   font-weight: 500;
   line-height: 150%;
   font-family: "PP Neue Montreal", sans-serif;
-  text-transform: capitalize;
 }
 
 .buttonTxtSecondary {
@@ -219,6 +218,7 @@
 .buttonBack {
   cursor: pointer;
   margin: 0;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;

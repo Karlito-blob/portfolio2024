@@ -38,7 +38,7 @@ export default function Footer() {
             <p className={ds.bodySmall}>@2024 - Karl chareyre Portfolio</p>
             <div className={ds.container}>
                 <SportsBasketballIcon className={ds.buttonIcon} onClick={() => handleNavigationDribbble()} />
-                <InstagramIcon className={ds.buttonIcon} onClick={() => handleNavigationInstagram()} />
+                {/* <InstagramIcon className={ds.buttonIcon} onClick={() => handleNavigationInstagram()} /> */}
                 <GitHubIcon className={ds.buttonIcon} onClick={() => handleNavigationGitHub()} />
                 <LinkedInIcon className={ds.buttonIcon} onClick={() => handleNavigationLinkedin()} />
             </div>
