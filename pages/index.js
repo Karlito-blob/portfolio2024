@@ -26,7 +26,7 @@ function Index() {
       <Header />
       <div className={styles.boxTitle}>
         <h1 className={ds.displayLarge}>Karl Chareyre</h1>
-        <p className={ds.bodyMedium}>J’identifie et conçois des expériences<br />qui offrent de l'amusement à mes utilisateurs !</p>
+        <p className={ds.bodyMedium}>J’identifie et conçois des expériences<br />qui offrent du plaisir à mes utilisateurs !</p>
       </div>
       <div className={styles.boxCartouches}>
         {cartouches}
